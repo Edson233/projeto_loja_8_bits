@@ -1,0 +1,44 @@
+@font-face {
+    font-family: mario;
+    src: url("../../assets/fonts/SuperMario256.ttf");
+}
+
+.acount{
+    background: linear-gradient(gray, lightblue);
+    height: 100%;
+    width: 80%;
+    min-height: 10rem;
+    margin: 8rem auto 2rem;
+    border-radius: 30px;
+}
+
+.acountTitle{
+    font-size: 3rem;
+    text-align: center;
+    font-family: mario;
+}
+
+.acountForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.acountInput{
+    width: 60%;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.acountSubmit{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: mario;
+    border-radius: 15px;
+    margin: 0.5rem 0;
+}

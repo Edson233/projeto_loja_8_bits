@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(90deg, purple, blue, purple);
+}
+
+@font-face {
+    font-family: mario;
+    src: url("../../assets/fonts/SuperMario256.ttf");
+}
+
+.contact{
+    background: linear-gradient(gray, rgb(144, 168, 175));
+    width: 80%;
+    height: 32rem;
+    margin: 8rem auto 3rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.textInput{
+    width: 80%;
+    height: 2rem;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact label{
+    font-size: 2rem;
+    font-family: mario;
+}
+
+.contact .submitInput{
+    width: 20%;
+    height: 2rem;
+    border-radius: 15px;
+    margin: 0.5rem;
+    font-family: mario;
+}
+
+.contact #descriptionInput{
+    text-align: left;
+    padding: 0.5rem;
+    height: fit-content;
+    min-height: 6rem;
+    border-radius: 15px 0px 0px 15px;
+}

@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url('./../../assets/fonts/slkscr.ttf');
+  }
+
+@font-face {
+    font-family: Glicth;
+    src: url('../../assets/fonts/THE-GLITCH.ttf');
+}
+
+.shop-page{
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    background: linear-gradient(90deg,black , rgb(1, 67, 1), black 80%);
+}
+
+
+.carrosel{
+    height: 38rem;
+}
+
+.carrosel-img{
+    width: 100%;
+    height: 38rem;
+}
+
+.filter{
+    background-color: rgb(1, 62, 1);
+    width: 20%;
+    height: 100%;
+    position: sticky;
+    top: 6rem;
+    list-style-type: none;
+    color: white;
+    border-right: 2px solid black;
+}
+
+.filter .categories{
+    list-style-type: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1rem;
+}
+
+.shop-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.products{
+    background: linear-gradient(90deg, rgb(1, 62, 1), black);
+    color: white;
+    height: 100%;
+    width: 80%;
+    margin-left: 21%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px;
+}
+
+.product{
+    width: 13rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ;
+    perspective: 20px;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 30px;
+    perspective: 50px;
+    box-shadow: 4px 4px 0 black;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.511)
+}
+
+.product-outside:hover .product{
+    transform: rotateY(360deg);
+}
+
+.product-outside:hover .item-description{
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+
+.product-outside:hover .name{
+    font-size: 1.5rem;
+}
+
+.product:hover .img{
+    display: none;
+}
+
+.product .img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 15px;
+}
+
+.product .name{
+    font-family: 'Times New Roman', Times, serif;
+    font: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.CartAddButton{
+    background-color: #3a1c71;
+    color: white;
+}
+
+.shop-button{
+    width: 115%;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: Pixel;
+    margin-top: auto;
+    padding-bottom: 1.5em;
+    border: 2px solid black;
+}
+
+.goToCartButton{
+    background-color: gold;
+}
+
+.item-description{
+    display: none;
+}
+
+.pagination{
+    bottom: 0;
+    align-self: flex-end;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 25px;
+    gap: 2rem;
+}
+
+.pagination .active{
+    color: white;
+    text-decoration: none;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.81);
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.products a{
+    text-decoration: none;
+    color: white;
+}
+
+.propaganda{
+    height: 20rem;
+    width: 80%;
+    margin: 5rem auto 0;
+    padding-bottom: 5rem;
+}
+
+.propaganda .propagandaImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+@media only screen and (max-width: 600px){
+    .filter .categories{
+        font-size: 0.5rem;
+        gap: 1.3rem;
+    }
+    .product{
+        width: 8rem;
+    }
+
+
+    .filter{
+        overflow-y: auto;
+    }
+
+    .product-outside:hover .item-description{
+        font-size: 1rem;
+    }
+
+    .shop-button{
+        font-size: 1.25rem;
+    }
+
+    .product-outside:hover .name{
+        font-size: 1rem;
+    }
+
+    .carrosel{
+        height: 25rem;
+    }
+
+    .carrosel-img{
+        height: 25rem;
+    }
+}
