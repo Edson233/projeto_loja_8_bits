@@ -13,10 +13,10 @@ function App() {
       <Router>
       <NavBar />
         <Routes>
-        <Route path="/" element={<ShopPage />}></Route>
-        <Route path="/cart" element={<CartPage />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/acount" element={<Acount />}></Route>
+        <Route path="/projeto_loja_8_bits" element={<ShopPage />}></Route>
+        <Route path="/projeto_loja_8_bits/cart" element={<CartPage />}></Route>
+        <Route path="/projeto_loja_8_bits/contact" element={<Contact />}></Route>
+        <Route path="/projeto_loja_8_bits/acount" element={<Acount />}></Route>
         </Routes>
         <Footer />
       </Router>

@@ -21,10 +21,10 @@ const NavBar = () => {
     return (<nav className="navbar">
         <ul className="nav-list">
             <li className="logo-item nav-item"> <img src={logo} alt="" height="100%" width="500px" className="logo" /> </li>
-            <li className="nav-item target"><Link className="nav-link" to="/">Shop</Link></li>
-            <li className="nav-item target"><Link className="nav-link cart-icon" to="/cart"><ShoppingCart size="2rem" /></Link> {items > 0 ? <span className="cart-items">{items}</span> : undefined } </li>
-            <li className="nav-item target"><Link className="nav-link" to="/contact">Contato</Link></li>
-            <li className="nav-item target"><Link className="nav-link" to="/acount">Login</Link></li>
+            <li className="nav-item target"><Link className="nav-link" to="/projeto_loja_8_bits">Shop</Link></li>
+            <li className="nav-item target"><Link className="nav-link cart-icon" to="/projeto_loja_8_bits/cart"><ShoppingCart size="2rem" /></Link> {items > 0 ? <span className="cart-items">{items}</span> : undefined } </li>
+            <li className="nav-item target"><Link className="nav-link" to="/projeto_loja_8_bits/contact">Contato</Link></li>
+            <li className="nav-item target"><Link className="nav-link" to="/projeto_loja_8_bits/acount">Login</Link></li>
         </ul>
     </nav>)
 }
