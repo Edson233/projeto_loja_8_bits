@@ -35,7 +35,13 @@ export const CartContextProvider = (props) => {
         setCart((prev) => ({...prev, [id] : prev[id] - n}))
     }
 
-    const contexValue = {cart ,cartAdd ,cartRemove, getTotal}
+    const reset = () => {
+        for (let item in cart){
+            cartRemove(item , cart[item])
+        }
+    }
+
+    const contexValue = {cart ,cartAdd ,cartRemove, getTotal, reset}
 
     // eslint-disable-next-line react/prop-types
     return <CartContext.Provider value={contexValue}>{props.children}</CartContext.Provider>

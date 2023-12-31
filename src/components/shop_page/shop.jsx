@@ -9,10 +9,12 @@ import garantia from "../../assets/Downloads/garantia.png"
 import entrega from "../../assets/Downloads/entrega.png"
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
+import { useEffect } from "react"
 
 export const ShopPage = () => {
 
   //filter javascript
+
 
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -30,7 +32,6 @@ export const ShopPage = () => {
         filters.some((filter) => product.tags.includes(filter))
       );
     }
-    console.log(PRODUCTS.map(a => {return {...a}}))
     if (filtered.length === 0){
       filtered = PRODUCTS.map(a => {return {...a}});
     }else{
