@@ -191,23 +191,37 @@
 @media only screen and (max-width: 600px){
     .cartProduct{
         height: 3.5rem;
+        min-width: fit-content;
     }
 
     .cartProduct .description .name{
-        font-size: 0.7rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .description .trash{
+        width: 1.5rem;
     }
 
     .cartProduct .img{
-        width: 4rem;
+        width: 2.5rem;
     }
 
     .cartProduct .quantity{
         width: 100%;
-        height: 2rem;
+        height: 1.7rem;
     }
 
     .cartProduct .description{
         font-size: 1rem;
+    }
+
+    .popWindow button{
+        min-width: fit-content;
+    }
+
+    .popWindow img{
+        width: 65%;
     }
 
 }

@@ -199,10 +199,13 @@
         gap: 1.3rem;
     }
     .product{
-        width: 8rem;
+        width: 7.3rem;
     }
 
-
+    .product .name{
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
 
 
     .filter{
@@ -221,11 +224,7 @@
         font-size: 1rem;
     }
 
-    .carrosel{
-        height: 25rem;
-    }
-
-    .carrosel-img{
-        height: 25rem;
+    .carrosel , .carrosel-img{
+        height: 14rem;
     }
 }
